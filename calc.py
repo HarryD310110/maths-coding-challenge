@@ -1,11 +1,17 @@
 
 # Maths coding challenge!
 
+import sys
+
 # 1) Ask user to enter an integer and store as a variable
 #    Bonus points for checking that the input is an integer and raise an exception if not!
 
 value = input("Please Enter An Integer: ")
-value = int(value)
+try:
+   value = int(value)
+except:
+   print('The Value You Entered Is Not An Integer.')
+   sys.exit(1)
 
 # 2) Write functions to calculate the square, cube, square root and reciprocal for the given integer
 
