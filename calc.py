@@ -13,6 +13,10 @@ except:
    print('The Value You Entered Is Not An Integer.')
    sys.exit(1)
 
+if value == 0:
+   print("Input Can Not Be 0!")
+   sys.exit(1)
+
 # 2) Write functions to calculate the square, cube, square root and reciprocal for the given integer
 
 # For example: 
@@ -29,6 +33,9 @@ def calc_sqrt(value):
 def calc_recip(value):
    return 1.0 / value
 
+def calc_multiples(value):
+   return value * 1, value * 2, value * 3, value * 4, value * 5
+
 # 3) Call each function by passing the integer variable to each 
 
 # For example:
@@ -37,6 +44,7 @@ square = calc_square(value)
 cube = calc_cube(value)
 sqrt = calc_sqrt(value)
 recip = calc_recip(value)
+mult = calc_multiples(value)
 
 # 4) print the results to screen
 
@@ -44,3 +52,4 @@ print('Square of', value, 'is :', square)
 print('Cube of', value, 'is :', cube)
 print('Square Root of', value, 'is :', sqrt)
 print('Reciprocal of', value, 'is :', recip)
+print('First 5 Multiples of', value, 'is :', mult)
